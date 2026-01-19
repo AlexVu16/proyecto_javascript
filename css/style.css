@@ -1,0 +1,52 @@
+/* ==================================================
+   ESTILOS GENERALES DEL SITIO
+================================================== */
+
+/* Estilo general del body */
+body {
+    font-family: Arial, sans-serif; /* Tipografía legible */
+    background-color: #f2f2f2;      /* Color de fondo suave */
+    padding: 20px;                  /* Espaciado interno */
+}
+
+/* Título principal */
+h1 {
+    color: #333;                    /* Color oscuro para buena lectura */
+}
+
+/* ==================================================
+   ESTILOS DE SECCIONES
+================================================== */
+
+/* Estilo base para todas las secciones */
+section {
+    background-color: #ffffff;      /* Fondo blanco */
+    padding: 15px;                  /* Espaciado interno */
+    margin-bottom: 20px;            /* Separación entre secciones */
+    border-radius: 5px;             /* Bordes redondeados */
+}
+
+/* ==================================================
+   ESTILOS DE INPUTS Y BOTONES
+================================================== */
+
+/* Inputs y botones */
+input,
+button {
+    padding: 8px;                   /* Tamaño cómodo para el usuario */
+    margin-top: 5px;
+}
+
+/* Botones */
+button {
+    cursor: pointer;                /* Cambia el cursor al pasar por encima */
+}
+
+/* ==================================================
+   CLASES UTILITARIAS
+================================================== */
+
+/* Clase para ocultar elementos */
+.oculto {
+    display: none;                  /* Se utiliza para ocultar el menú */
+}

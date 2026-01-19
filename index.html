@@ -1,12 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+    <!-- ===============================
+         CONFIGURACIÓN GENERAL DEL DOCUMENTO
+    ================================ -->
+
+    <!-- Codificación de caracteres -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!-- Título que se muestra en la pestaña del navegador -->
+    <title>Simulador de Multas Vehiculares</title>
+
+    <!-- Enlace al archivo de estilos CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    
-    <script src="main.js"></script>
+
+    <!-- ===============================
+         TÍTULO PRINCIPAL
+    ================================ -->
+    <h1>Simulador de Control Vehicular</h1>
+
+    <!-- ===============================
+         SECCIÓN DE VALIDACIÓN DE PATENTE
+    ================================ -->
+    <section id="login">
+        <h2>Validar patente</h2>
+
+        <!-- Input para que el usuario ingrese la patente -->
+        <input 
+            type="text" 
+            id="patenteInput" 
+            placeholder="Ingresá tu patente"
+        >
+
+        <!-- Botón que dispara el evento de validación -->
+        <button id="validarBtn">Validar</button>
+
+        <!-- Mensaje dinámico de validación -->
+        <p id="loginMsg"></p>
+    </section>
+
+    <!-- ===============================
+         MENÚ PRINCIPAL DEL SIMULADOR
+         Se encuentra oculto hasta validar la patente
+    ================================ -->
+    <section id="menu" class="oculto">
+        <h2>Menú</h2>
+
+        <!-- ===============================
+             BLOQUE: MULTA POR VELOCIDAD
+        ================================ -->
+        <div>
+            <h3>Multa por velocidad</h3>
+
+            <!-- Input para ingresar la velocidad -->
+            <input 
+                type="number" 
+                id="velocidadInput" 
+                placeholder="Velocidad en km/h"
+            >
+
+            <!-- Botón para calcular la multa -->
+            <button id="calcularMultaBtn">Calcular multa</button>
+
+            <!-- Resultado de la multa generado por JS -->
+            <p id="resultadoMulta"></p>
+        </div>
+
+        <!-- ===============================
+             BLOQUE: DATOS DEL VEHÍCULO
+        ================================ -->
+        <div>
+            <h3>Datos del vehículo</h3>
+
+            <!-- Botón para mostrar la patente -->
+            <button id="mostrarPatenteBtn">Mostrar patente</button>
+
+            <!-- Información del vehículo -->
+            <p id="patenteMsg"></p>
+        </div>
+    </section>
+
+    <!-- ===============================
+         ENLACE AL ARCHIVO JAVASCRIPT
+         Se carga al final para asegurar el DOM
+    ================================ -->
+   
+    <script src="/JS/main.js"></script>
+
 </body>
 </html>
